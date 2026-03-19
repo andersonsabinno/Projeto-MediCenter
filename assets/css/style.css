@@ -1,6 +1,8 @@
 :root {
     --gray-color: #727272;
     --white-color: #FFFFFF;
+    --black-color: #000000;
+    --text-color: #555555;
 
     --bg-color-blue: #39aae1;
     --bg-color-blue-dark: #0070c7 ;
@@ -12,6 +14,7 @@ body {
     font-family: Arial;
     margin: 0;
     padding: 0;
+    padding-bottom: 300px;
 }
 
 header { 
@@ -83,7 +86,7 @@ nav a:hover {
 .banner_headlines h1 { 
     color: var(--white-color);
     font-size: 70px;
-    text-shadow: 0px 1px 0px #555555;
+    text-shadow: 0px 1px 0px var(--text-color);
     margin:0;
     padding: 0;
     max-width: 350px;
@@ -92,7 +95,7 @@ nav a:hover {
 .banner_headlines h2 { 
     color: var(--white-color);
     font-size: 21px;
-    text-shadow: 0px 1px 0px #555555;
+    text-shadow: 0px 1px 0px var(--text-color);
     margin:0;
     padding: 0;
     margin-top: 30px;
@@ -153,4 +156,91 @@ nav a:hover {
     border-bottom: 1px solid var(--white-color);
     margin-top:20px;
     padding-bottom: 10px;
+}
+
+#geral { 
+    display: flex;
+    justify-content: center;
+}
+
+#geral .container section { 
+    flex: 2;
+}
+
+#geral .container aside { 
+    flex: 1;
+}
+
+.widget { 
+    margin-top: 20px;
+    /* margin-bottom: 30px; */
+}
+
+.widget-title-text { 
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.widget-title-bar { 
+    width: 50px;
+    height: 2px;
+    background-color: var(--bg-color-blue);
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+article .news-data { 
+    display: flex;
+}
+
+article .news-posted-at { 
+    background-color: var(--bg-color-blue-dark2);
+    color: var(--white-color);
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news-comments { 
+    background-color: var(--bg-color-blue);
+    color: var(--white-color);
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news-thambnail { 
+    margin-top: 30px;
+}
+
+article .news-thambnail img { 
+    width: 100%;
+    height: auto;
+}
+
+article .news-title{ 
+    margin: 25px 0px;
+    color: var(--black-color);
+    font-size: 23px;
+}
+
+article .news-resume { 
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+article a{ 
+    text-decoration: none;
+}
+
+.flex {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+article { 
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
 }
