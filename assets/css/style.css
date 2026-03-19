@@ -3,6 +3,7 @@
     --white-color: #FFFFFF;
     --black-color: #000000;
     --text-color: #555555;
+    --black-dark-color: #1e1e1e;
 
     
     --bg-color-gray:  #cccccc;
@@ -16,7 +17,6 @@ body {
     font-family: Arial;
     margin: 0;
     padding: 0;
-    padding-bottom: 300px;
 }
 
 header {
@@ -256,8 +256,8 @@ aside .widget-body {
 }
 
 .widget-body .box {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     background-color: var(--bg-color-blue);
     margin-bottom: 20px;
     border-radius: 5px;
@@ -292,4 +292,53 @@ aside .widget-body .info-title {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--black-dark-color);
+}
+
+.footer-menu { 
+    display: flex;
+    /* flex: 1; */
+}
+
+.fm-1,
+.fm-2,
+.fm-3 { 
+    flex: 1;
+    color: var(--white-color);
+    padding: 20px;
+}
+
+.fm-1 { 
+    background-color: var(--bg-color-blue);
+}
+
+.fm-2 { 
+    background-color: var(--bg-color-blue-dark);
+}
+
+.fm-3 { 
+    background-color: var(--bg-color-blue-dark2);
+}
+
+.footer-area { 
+    display: flex;
+    /* background-color: #F00; */
+}
+
+.footer-areaitem { 
+    flex: 1;
+    color: var(--white-color);
+}
+
+.footer-copy {
+    margin-top: 20px;
+    border-top: 1px solid #2c2c2c;
+    color: var(--text-color);
+    height: 40px;
+    line-height: 40px;
 }
