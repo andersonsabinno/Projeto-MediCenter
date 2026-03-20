@@ -56,11 +56,12 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px;
-    color: var(--gray-color)
+    color: var(--gray-color);
 }
 
 nav .active a,
 nav a:hover {
+    border-radius: 4px;
     background-color: var(--bg-color-blue);
     color: var(--white-color);
 }
@@ -342,3 +343,37 @@ footer {
     height: 40px;
     line-height: 40px;
 }
+
+.footer-areaitem .widget .title,
+.widget-body .info .address,
+.cell { 
+    font-size: 14px;
+    color: var(--gray-color);
+    line-height: 1.5;
+}
+
+.footer-title{
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-title .date-footer { 
+    color: var(--bg-color-blue-dark);
+    margin-top: 5px;
+}
+
+.widget-body .info .address, 
+.cell { 
+    margin-top: 15px;
+}
+
+.info { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.rede-sociais img { 
+    margin-top: 15px;
+}
+
